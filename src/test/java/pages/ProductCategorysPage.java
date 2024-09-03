@@ -5,11 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.junit.Test;
+import utility.BrowserDriver;
 
 public class ProductCategorysPage {
 
     //Product view
-    public static WebDriver driver;
+    public static WebDriver driver = BrowserDriver.getDriver();
     public static String productcategory = "//*[@id=\"ShoeType\"]";
 
     @Test

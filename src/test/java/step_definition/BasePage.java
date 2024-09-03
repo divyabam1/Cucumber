@@ -1,18 +1,24 @@
 package step_definition;
 
 import io.cucumber.java.en.Given;
-import static pages.Homepage.*;
+import pages.Homepage;
+import utility.BrowserDriver;
 
 public class BasePage
 
+
+
 {
+
+    Homepage homepage;
+
     @Given("User navigates to login page")
             public void userNavigatesToLoginPage() throws Throwable
         {
-            click_hamburger();
-            Sign_portal();
-
-
+            //BrowserDriver bd = new BrowserDriver();
+            homepage = new Homepage();
+            homepage.clickHamburger();
+            homepage.signPortal();
 
     }
 }

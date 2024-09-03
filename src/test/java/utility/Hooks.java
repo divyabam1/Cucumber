@@ -6,8 +6,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Hooks {
 
-    public static BrowserDriver driver;
-    public static ChromeOptions options;
+    /*public static BrowserDriver driver;
+    //public static ChromeOptions options;
     @Before
     public void setup()
     {
@@ -20,5 +20,5 @@ public class Hooks {
     {
 
         driver.close();
-    }
+    }*/
 }
